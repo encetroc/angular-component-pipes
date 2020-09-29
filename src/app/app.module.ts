@@ -9,6 +9,7 @@ import { DecimalPipeComponent } from "./decimal-pipe.component";
 import { PlurialPipeComponent } from "./plurial-pipe.component";
 import { SelectPipeComponent } from "./select-pipe.component";
 import { JsonPipeComponent } from "./json-pipe.component";
+import { KeyValuePipeComponent } from "./key-value-pipe.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -19,7 +20,8 @@ import { JsonPipeComponent } from "./json-pipe.component";
     DecimalPipeComponent,
     PlurialPipeComponent,
     SelectPipeComponent,
-    JsonPipeComponent
+    JsonPipeComponent,
+    KeyValuePipeComponent
   ],
   bootstrap: [AppComponent]
 })
