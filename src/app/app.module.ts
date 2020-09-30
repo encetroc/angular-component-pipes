@@ -13,6 +13,9 @@ import { KeyValuePipeComponent } from "./key-value-pipe.component";
 import { CasePipeComponent } from "./case-pipe.component";
 import { PercentPipeComponent } from "./percent-pipe.component";
 import { SlicePipeComponent } from "./slice-pipe.component";
+import { ExponentialPipe } from "./exponential.pipe";
+import { ExponentialPipeComponent } from "./exponential-pipe.component";
+import { FetchJsonPipeComponent } from "./fetch-json-pipe.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -27,7 +30,10 @@ import { SlicePipeComponent } from "./slice-pipe.component";
     KeyValuePipeComponent,
     CasePipeComponent,
     PercentPipeComponent,
-    SlicePipeComponent
+    SlicePipeComponent,
+    ExponentialPipe,
+    ExponentialPipeComponent,
+    FetchJsonPipeComponent
   ],
   bootstrap: [AppComponent]
 })
