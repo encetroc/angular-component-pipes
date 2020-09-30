@@ -16,7 +16,8 @@ import { PercentPipeComponent } from "./percent-pipe.component";
 import { SlicePipeComponent } from "./slice-pipe.component";
 import { ExponentialPipe } from "./exponential.pipe";
 import { FetchJsonPipe } from "./fetch-json.pipe";
-import { HeroListComponent } from "./hero-list.component";
+import { FetchJsonPipeComponent } from "./fetch-json-pipe.component";
+import { ExponentialPipeComponent } from "./exponential-pipe.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule],
@@ -33,8 +34,9 @@ import { HeroListComponent } from "./hero-list.component";
     PercentPipeComponent,
     SlicePipeComponent,
     ExponentialPipe,
+    ExponentialPipeComponent,
     FetchJsonPipe,
-    HeroListComponent
+    FetchJsonPipeComponent
   ],
   bootstrap: [AppComponent]
 })
