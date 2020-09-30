@@ -4,19 +4,10 @@ import { Component } from '@angular/core';
   selector: 'key-value-pipe',
   template: `
     <h3>Keyvalue pipe</h3>
-    <span>
-      <p>Object</p>
-      <div *ngFor="let item of object | keyvalue">
-        {{item.key}}:{{item.value}}
-      </div>
-      <p>Map</p>
-      <div>
-        {{map | json}}
-      </div>
-      <div *ngFor="let item of map | keyvalue">
-        {{item.key}}:{{item.value}}
-      </div>
-    </span>
+    <p> Object without keyvalue pipe <b> {{object | json }} </b> </p>
+    <p> Object with keyvalue pipe <b> {{object | keyvalue | json }} </b> </p>
+    <p> Map without keyvalue pipe <b> {{map | json }} </b> </p>
+    <p> Map with keyvalue pipe <b> {{map | keyvalue | json }} </b> </p>
   `
 })
 export class KeyValuePipeComponent {

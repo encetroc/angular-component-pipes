@@ -5,8 +5,8 @@ import { Component } from "@angular/core";
   template: `
     <h3>Plurial pipe</h3>
     <p> If no messages <b> {{noMessages.length | i18nPlural: messageMapping}} </b> </p>
-    <p> If no messages <b> {{oneMessage.length | i18nPlural: messageMapping}} </b> </p>
-    <p> If no messages <b> {{manyMessages.length | i18nPlural: messageMapping}} </b> </p>
+    <p> If one message <b> {{oneMessage.length | i18nPlural: messageMapping}} </b> </p>
+    <p> If more than one message <b> {{manyMessages.length | i18nPlural: messageMapping}} </b> </p>
   `
 })
 export class PlurialPipeComponent {

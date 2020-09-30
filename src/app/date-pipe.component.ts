@@ -4,6 +4,7 @@ import { Component } from "@angular/core";
   selector: "date-pipe",
   template: `
     <h3>Date pipe</h3>
+    <p> Raw date without pipe is <b> {{date}} </b> </p>
     <p> Nomral date is <b> {{date | date}} </b> </p>
     <p> Short date is <b> {{date | date:'shortDate'}} </b> </p>
     <p> Full date is <b> {{date | date:'fullDate'}} </b> </p>

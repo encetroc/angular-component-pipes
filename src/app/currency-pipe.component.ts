@@ -4,6 +4,7 @@ import { Component } from "@angular/core";
   selector: "currency-pipe",
   template: `
     <h3>Currency pipe</h3>
+    <p> Raw price without pipe is <b> {{price}} </b> </p>
     <p> Nomral currency is <b> {{price | currency}} </b> </p>
     <p> Specific currency is <b> {{price | currency: 'CAD'}} </b> </p>
     <p> Specific currency with code is <b> {{price | currency: 'CAD' : 'code'}} </b> </p>

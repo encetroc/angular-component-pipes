@@ -10,6 +10,9 @@ import { PlurialPipeComponent } from "./plurial-pipe.component";
 import { SelectPipeComponent } from "./select-pipe.component";
 import { JsonPipeComponent } from "./json-pipe.component";
 import { KeyValuePipeComponent } from "./key-value-pipe.component";
+import { CasePipeComponent } from "./case-pipe.component";
+import { PercentPipeComponent } from "./percent-pipe.component";
+import { SlicePipeComponent } from "./slice-pipe.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -21,7 +24,10 @@ import { KeyValuePipeComponent } from "./key-value-pipe.component";
     PlurialPipeComponent,
     SelectPipeComponent,
     JsonPipeComponent,
-    KeyValuePipeComponent
+    KeyValuePipeComponent,
+    CasePipeComponent,
+    PercentPipeComponent,
+    SlicePipeComponent
   ],
   bootstrap: [AppComponent]
 })
