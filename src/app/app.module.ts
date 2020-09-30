@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from "./app.component";
 import { DatePipeComponent } from "./date-pipe.component";
@@ -14,9 +15,11 @@ import { CasePipeComponent } from "./case-pipe.component";
 import { PercentPipeComponent } from "./percent-pipe.component";
 import { SlicePipeComponent } from "./slice-pipe.component";
 import { ExponentialPipe } from "./exponential.pipe";
+import { FetchJsonPipe } from "./fetch-json.pipe";
+import { HeroListComponent } from "./hero-list.component";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   declarations: [
     AppComponent,
     DatePipeComponent,
@@ -29,7 +32,9 @@ import { ExponentialPipe } from "./exponential.pipe";
     CasePipeComponent,
     PercentPipeComponent,
     SlicePipeComponent,
-    ExponentialPipe
+    ExponentialPipe,
+    FetchJsonPipe,
+    HeroListComponent
   ],
   bootstrap: [AppComponent]
 })
