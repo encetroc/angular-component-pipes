@@ -4,6 +4,8 @@ import { Component } from '@angular/core';
   selector: 'fetch-json-pipe',
   template: `
     <h3>Fetch json pipe</h3>
-    <p>Object fetched is <br> <b>{{'assets/heroes.json' | fetch | json}} </b></p>`
+    <p>Object fetched from {{file}} is <br> <b>{{ file | fetch | json}} </b></p>`
 })
-export class FetchJsonPipeComponent { }
+export class FetchJsonPipeComponent {
+  file = 'assets/starwars.json'
+}
