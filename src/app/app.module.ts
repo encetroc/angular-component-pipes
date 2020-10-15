@@ -18,10 +18,14 @@ import { ExponentialPipe } from "./exponential.pipe";
 import { FetchJsonPipe } from "./fetch-json.pipe";
 import { FetchJsonPipeComponent } from "./fetch-json-pipe.component";
 import { ExponentialPipeComponent } from "./exponential-pipe.component";
+import { PrimaryPipe } from "./primary.pipe";
+import { PrimaryPipeComponent } from "./primary-pipe.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule],
   declarations: [
+    PrimaryPipeComponent,
+    PrimaryPipe,
     AppComponent,
     DatePipeComponent,
     CurrencyPipeComponent,
